@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <div class="heading">
+          <div class="game_name">
+            <h3>ROCK</h3>
+            <h3>PAPER</h3>
+            <h3>SCISSORS</h3>
+          </div>
+          <div class="score">
+            <div class="computer-score">
+              <p>
+                COMPUTER <br />
+                SCORE
+              </p>
+              <div class="pcScore">0</div>
+            </div>
+            <div class="your-score">
+              <p>
+                YOUR <br />
+                SCORE
+              </p>
+              <div class="userScore">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <div class="hurraypage">
+            <div class="prize">
+                <img id="Trophy" src="hurray.png" alt="imgg">
+            </div>
+            <div class="finalstuff">
+                <div id="hurray">HURRAY!!</div>
+                <div id="hurrayWon">YOU WON THE GAME</div>
+                <div class="again2" onclick="againPlay()"><button id="addBox" >PLAY AGAIN</button></div>
+            </div>
+        </div>
+
+        <div class="container">
+      <div class="triparent">
+        <div class="triangle1"></div>
+        <div class="triangle2"></div>
+        <div class="rock button" id="rock"></div>
+        <div class="paper button" id="paper"></div>
+        <div class="scis button" id="scissor"></div>
+      </div>
+
+      
+      <div class="section2">
+        <div class="win">
+            <div class="youPicked">
+                <div class="pc"><p>YOU PICKED</p></div>
+                <div class="anime1">
+                    <div class="pul1"></div>
+                    <div class="pul2"></div>
+                    <div class="pul3"></div>
+                </div>
+                <div class="cir1"></div>
+            </div>
+            <div class="status">
+                <div class="winLose"></div>
+                <div class="against"><P>AGAINST PC</P></div>
+                <button class="playbtn" id="play-again" onclick="againPlay()">PLAY AGAIN</button>
+            </div>
+            <div class="pcPicked">
+                <div class="pc"><p>PC PICKED</p></div>
+                <div class="anime2">
+                    <div class="pul1"></div>
+                    <div class="pul2"></div>
+                    <div class="pul3"></div>
+                </div>
+                <div class="cir2"></div>
+            </div>
+            
+
+        </div>
+ </div>
+    </div>
+</div>
+
+    <div class="rules">
+        <div class="rulebox">
+          <button class="close" onclick="openClose()">X</button>
+          <h1>Game Rules</h1>
+          <div class="list">
+            <ul>
+              <li>
+                Rock beats scissors, scissors beat paper, and paper beats rock.
+              </li>
+              <li>
+                Agree ahead of time whether you’ll count off “rock, paper,
+                scissors, shoot” or just “rock, paper, scissors.”
+              </li>
+              <li>
+                Use rock, paper, scissors to settle minor decisions or simply
+                play to pass the time
+              </li>
+              <li>
+                If both players lay down the same hand, each player lays down
+                another hand
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btns">
+            <button class="rulebtn" onclick="openClose()">RULES</button>
+            <button class="nextbtn" onclick="next()">NEXT</button>
+        </div>
+      
+        
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
